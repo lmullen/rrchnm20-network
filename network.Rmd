@@ -1,0 +1,26 @@
+---
+title: "Network"
+author: "Lincoln Mullen"
+date: "November 14, 2014"
+output: html_document
+---
+
+```{r}
+library(igraph)
+```
+
+Load the graph and find the bipartite projection.
+
+```{r}
+df <- read.csv("data/rrchnm-collaborators.csv", stringsAsFactors = FALSE)
+graph <- graph.data.frame(df)
+# plot(graph, vertex.label = NA)
+V(graph)$type <- bipartite.mapping(graph)$type
+bi_graph <- bipartite.projection(graph)
+```
+
+
+```{r}
+
+```
+
