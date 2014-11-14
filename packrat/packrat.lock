@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.1.1
-RVersion: 3.1.1
+RVersion: 3.1.0
 Repos: CRAN=http://cran.r-project.org,
     BioCsoft=http://bioconductor.org/packages/3.0/bioc,
     BioCann=http://bioconductor.org/packages/3.0/data/annotation,
@@ -49,7 +49,7 @@ Package: dplyr
 Source: CRAN
 Version: 0.3.0.2
 Hash: 0da1a09895f941f144446a6d57d77095
-Requires: magrittr, assertthat, BH, DBI, lazyeval, R6, Rcpp
+Requires: assertthat, BH, DBI, lazyeval, magrittr, R6, Rcpp
 
 Package: evaluate
 Source: CRAN
@@ -78,6 +78,10 @@ Source: CRAN
 Version: 0.5
 Hash: 68a70bdd16fb949a12e4fda7f31def00
 Requires: digest, jsonlite, RCurl, stringr
+
+Package: igraph
+Source: CRAN
+Version: 0.7.1
 
 Package: jsonlite
 Source: CRAN
