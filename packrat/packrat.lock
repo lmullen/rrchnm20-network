@@ -7,6 +7,16 @@ Repos: CRAN=http://cran.r-project.org,
     BioCexp=http://bioconductor.org/packages/3.0/data/experiment,
     BioCextra=http://bioconductor.org/packages/3.0/extra
 
+Package: assertthat
+Source: CRAN
+Version: 0.1
+Hash: 4b419cfdc33a3019a7f3c6f0cdea6c38
+
+Package: BH
+Source: CRAN
+Version: 1.54.0-4
+Hash: 240790420ebcf7321eed885d421a8335
+
 Package: bitops
 Source: CRAN
 Version: 1.0-6
@@ -17,6 +27,11 @@ Source: CRAN
 Version: 1.17.1
 Hash: bb5fdc266f716b8a289a4f92007d53e3
 Requires: bitops
+
+Package: DBI
+Source: CRAN
+Version: 0.3.1
+Hash: 3a9e85b26ec3ab570266bccb3f9de055
 
 Package: devtools
 Source: CRAN
@@ -29,6 +44,12 @@ Package: digest
 Source: CRAN
 Version: 0.6.4
 Hash: e4bf0e79b15a352510aff0de905d31e2
+
+Package: dplyr
+Source: CRAN
+Version: 0.3.0.2
+Hash: 0da1a09895f941f144446a6d57d77095
+Requires: magrittr, assertthat, BH, DBI, lazyeval, R6, Rcpp
 
 Package: evaluate
 Source: CRAN
@@ -69,6 +90,11 @@ Version: 1.8
 Hash: d00d7b314ca4c34f8a56ceacefb31b4f
 Requires: digest, evaluate, formatR, highr, markdown, stringr
 
+Package: lazyeval
+Source: CRAN
+Version: 0.1.9
+Hash: 2953778d951973e2889641c06275ecf3
+
 Package: magrittr
 Source: CRAN
 Version: 1.0.1
@@ -105,6 +131,16 @@ Package: packrat
 Source: CRAN
 Version: 0.4.1-1
 Hash: 5716097644904b9c1b4be2692de16005
+
+Package: R6
+Source: CRAN
+Version: 2.0.1
+Hash: 9a3ac4e5fd8059af0fc5156bcb019bbc
+
+Package: Rcpp
+Source: CRAN
+Version: 0.11.3
+Hash: d9cc0a13885961b2d004cf73b0fb68dd
 
 Package: RCurl
 Source: CRAN

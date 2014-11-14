@@ -9,7 +9,7 @@ Set the Omeka API endpoint:
 
 ```{r}
 library(omekaR)
-library(magrittr)
+library(dplyr)
 omeka_endpoint("http://20.rrchnm.org/api")
 ```
 
@@ -40,3 +40,60 @@ types <- sapply(rrchnm, function(item) { item$item_type$name }) %>%
 projects <- rrchnm[types == "Project"]
 ```
 
+Get the project titles:
+
+```{r}
+titles <- projects %>%
+  lapply(function(item) {
+    element_texts(item, filter = "Title")[1]
+    }) %>%
+  unlist() %>%
+  unname()
+```
+
+Get the project participants:
+
+```{r}
+participant_types <- c("Staff Members", "Director(s)", "Proposal Co-Authors",
+                       "Content Experts", "Outreach", "Web Designer(s)",
+                       "Programmers", "Affiliates", "Managers")
+
+contribs <- projects %>%
+  lapply(function(item) {
+    element_texts(item, filter = participant_types)
+    })
+```
+
+Now for the ugly part: getting all the participants into an edge list.
+
+```{r}
+contribs_list <- contribs %>%
+  lapply(function(item) {
+    data_frame(person = unname(item), role = names(item))
+    })
+
+num_participants <- sapply(contribs_list, nrow)
+
+titles_rep <- vector(mode = "list", length = length(num_participants))
+for(i in seq_along(num_participants)) {
+  n <- num_participants[i]
+  title <- titles[i]
+  titles_rep[[i]] <- data_frame(project = rep(title, n))
+  }
+
+titles_df <- rbind_all(titles_rep)
+contribs_df <- rbind_all(contribs_list)
+```
+
+Now we have everything. So let's get the edge list:
+
+```{r}
+edge_list <- cbind(titles_df, contribs_df)
+```
+
+And write it to disk for sharing:
+
+```{r}
+write.csv(edge_list, file = "data/rrchnm-collaborators.csv",
+          row.names = FALSE)
+```
