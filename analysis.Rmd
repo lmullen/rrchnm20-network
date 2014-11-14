@@ -1,0 +1,27 @@
+---
+title: "RRCHNM 20th Anniversary"
+author: "Lincoln Mullen"
+date: "November 14, 2014"
+output: html_document
+---
+
+Set the Omeka API endpoint:
+
+```{r}
+library(omekaR)
+omeka_endpoint("http://20.rrchnm.org/api")
+```
+
+Download all the Omeka items, but cache the results.
+
+```{r}
+cache <- "data/rrchnm.rda"
+if(file.exists(cache)) {
+  load(cache) 
+} else {
+  # Wait 30 seconds between requests
+  rrchnm <- get_all_items(30)
+}
+```
+
+
