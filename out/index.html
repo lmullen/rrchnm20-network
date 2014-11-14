@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
 <script src=http://d3js.org/d3.v3.min.js></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
  <style>
 .link {
 stroke: #999;
@@ -22,11 +25,19 @@ pointer-events: none;
 </head>
 <body>
 
-<div id="text"></div>
+  <div id="text">
+  
+<div class="ui-widget">
+   <input id="search">
+    <button type="button" onclick="searchNode()">Search</button>
+</div>
+
+  </div>
 <div id="all"></div>
 
 
 
 
 <script src="all.js"></script>
+<script src="search.js"></script>
 </body>
