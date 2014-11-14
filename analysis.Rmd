@@ -9,6 +9,7 @@ Set the Omeka API endpoint:
 
 ```{r}
 library(omekaR)
+library(magrittr)
 omeka_endpoint("http://20.rrchnm.org/api")
 ```
 
@@ -24,4 +25,18 @@ if(file.exists(cache)) {
 }
 ```
 
+A sample item to play with:
+
+```{r}
+wba <- omeka_get("items", 349)
+wba_metadata <- element_texts(wba)
+```
+
+Get just the projects:
+
+```{r}
+types <- sapply(rrchnm, function(item) { item$item_type$name }) %>%
+  unlist()
+projects <- rrchnm[types == "Project"]
+```
 
