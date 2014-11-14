@@ -7,6 +7,8 @@ output: html_document
 
 ```{r}
 library(igraph)
+library(dplyr)
+library(stringr)
 ```
 
 Load the graph and find the bipartite projection.
@@ -19,8 +21,58 @@ V(graph)$type <- bipartite.mapping(graph)$type
 bi_graph <- bipartite.projection(graph)
 ```
 
+Plot the graphs
 
 ```{r}
 
+# plot(bi_graph$proj2)
 ```
+
+D3ify
+
+```{r}
+library(d3Network)
+projects_graph <- bi_graph$proj1 %>%
+  get.edgelist() %>%
+  as.data.frame()
+
+people_graph <- bi_graph$proj2 %>%
+  get.edgelist() %>%
+  as.data.frame()
+
+all_graph <- graph %>%
+  get.edgelist() %>%
+  as.data.frame()
+```
+
+Remove bad characters:
+
+```{r}
+projects_graph$V1 <- iconv(projects_graph$V1, to="ASCII", sub="")
+projects_graph$V2 <- iconv(projects_graph$V2, to="ASCII", sub="")
+people_graph$V1 <- iconv(people_graph$V1, to="ASCII", sub="")
+people_graph$V2 <- iconv(people_graph$V2, to="ASCII", sub="")
+
+people_graph$V1 <- str_replace_all(people_graph$V1, "\n", " ")
+people_graph$V2 <- str_replace_all(people_graph$V2, "\n", " ")
+people_graph$V1 <- str_replace_all(people_graph$V1, "\"", "")
+people_graph$V2 <- str_replace_all(people_graph$V2, "\"", "")
+
+all_graph$V1 <- iconv(all_graph$V1, to="ASCII", sub="")
+all_graph$V2 <- iconv(all_graph$V2, to="ASCII", sub="")
+all_graph$V1 <- str_replace_all(all_graph$V1, "\n", " ")
+all_graph$V2 <- str_replace_all(all_graph$V2, "\n", " ")
+all_graph$V1 <- str_replace_all(all_graph$V1, "\"", "")
+all_graph$V2 <- str_replace_all(all_graph$V2, "\"", "")
+```
+
+Try a network graph
+
+```{r results='asis'}
+d3SimpleNetwork(projects_graph, file = "out/projects.html",
+                linkDistance = 300)
+d3SimpleNetwork(people_graph, file = "out/people.html")
+d3SimpleNetwork(all_graph, file = "out/all.html")
+```
+
 
