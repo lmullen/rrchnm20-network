@@ -21,7 +21,7 @@ if(file.exists(cache)) {
   load(cache) 
 } else {
   # Wait 30 seconds between requests
-  rrchnm <- get_all_items(30)
+  rrchnm <- get_all_items(10)
 }
 ```
 
