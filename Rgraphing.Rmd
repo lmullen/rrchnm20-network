@@ -1,0 +1,94 @@
+---
+title: "RRCHNM20"
+author: "Jannelle Legg"
+date: "November 14, 2014"
+output: html_document
+---
+
+Working with the Omeka api:
+
+```{r}
+library(igraph)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(magrittr)
+
+rawData <- read.csv ("rrchnm20-network/data/rrchnm-collaborators.csv", stringsAsFactors=FALSE)
+
+rawData
+
+```
+load raw data and libraries, tidy data
+```{r}
+networkData <- rawData %>%
+  tbl_df() %>%
+  select(project = project,
+         person = person)
+
+networkData
+```
+
+```{r}
+
+testGraph <- graph.data.frame(networkData)
+testGraph
+
+plot(testGraph)
+```
+
+yay, it plotted.
+
+```{r}
+biGraph <- graph.data.frame(networkData, directed = FALSE)
+bipartite.mapping(biGraph)
+
+V(biGraph)$type <- bipartite.mapping(biGraph)$type
+is.bipartite(biGraph)
+
+```
+
+```{r}
+
+plot(biGraph, layout = layout.bipartite)
+title("CHNM network")
+
+```
+
+```{r}
+
+bipartite <- bipartite.projection(biGraph)
+str(bipartite)
+
+```
+
+```{r}
+plot(bipartite$proj2, edge.width = E(bipartite$proj2)$weight)
+title("RRCHNM - connections of people")
+
+#trying it again with styling:
+
+plot(bipartite$proj2, edge.width = E(bipartite$proj2)$weight,
+     layout = layout.fruchterman.reingold(bipartite$proj2,
+                                          weights = E(bipartite$proj2)$weight),
+     vertex.label.dist = 1)
+title("RRCHNM - connections of people")
+
+# not much better, trying again with something else
+
+set.seed(120)
+1 <- layout.fruchterman.reingold(biGraph, weights = E(biGraph)$weight)
+plot(biGraph,
+     vertex.label = NA,
+     vertex.size = 3,
+     edge.width = E(biGraph)$weight,
+     layout = 1)
+title("RRCHNM - connections of people")
+
+```
+
+```{r}
+plot(bipartite$proj1, edge.width = E(bipartite$proj1)$weight)
+title("RRCHNM - connections of project")
+```
+
