@@ -29,6 +29,6 @@ function searchNode() {
             .style("opacity", 1.0);
         d3.selectAll(".link").transition()
             .duration(5000)
-            .style("opacity", 0.6);
+            .style("opacity", 0.3);
     }
 }
