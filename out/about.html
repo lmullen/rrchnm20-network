@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <head>
 <script src=http://d3js.org/d3.v3.min.js></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
-<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
-<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="css/bootstrap.min.css" rel="stylesheet">
- <style>
-.link {
-stroke: #999;
-opacity: 0.4;
-stroke-width: 1.2px;
-}
-.node circle {
-stroke: #fff;
-opacity: 0.7;
-stroke-width: 1.5px;
-}
+<style>
 text {
 font: 7px 'Raleway', sans-serif;
 opacity: 0.6;
@@ -25,13 +11,17 @@ pointer-events: none;
 h1, h2, h3, h4, p {
   font-family: 'Raleway',sans-serif;
 }
+body, p{
+  font-size: 14px;
+}
 
 </style>
 
 </head>
 <body>
 <div class="container">
-<div class="row"> <!--navigation-->
+
+  <div class="row"> <!--navigation-->
     <div class="col-md-12">
           <nav role="navigation" class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,38 +39,26 @@ h1, h2, h3, h4, p {
                   <ul class="nav navbar-nav">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="people.html">People</a></li>
-                      <li class="active"><a href="projects.html">Projects</a></li>
-                      <li><a href="about.html">About</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li class="active"><a href="about.html">About</a></li>
+
                   </ul>
               </div>
           </nav>
     </div>
   </div>
-
-<div class="row">      
-  <div class="col-md-12">
-       <h2>RRCHNM Projects</h2>
-       <p>Click on the nodes below to highlight the names of the person or project</p>
-  </div>        
-</div>     
-
-
-<div id="text" class="row">
-  <div class="col-md-12">
-    <div class="ui-widget">
-        <input id="search">
-        <button type="button" onclick="searchNode()">Search</button>
-    </div>
-  </div>
-</div>
 <div class="row">
-<div id="projects" class="col-md-12"></div>
-
-
-
-
-<script src="projects.js"></script>
-<script src="search.js"></script>
-
+<div class="col-md-12">
+<p> The visualizations on this site were put together at the first day of the Roy Rosenzweig Center for History and New Media's 20th Anniversery conference on November 14, 2014.  Althought the visualizations are hosted here, they were a collaborative effort by:
+  <ul>
+    <li><a href="http://chnm.gmu.edu/author/ken-albers/">Ken Albers</a> | Twitter:<a href="https://twitter.com/kalbers">@kalbers</a></li>
+    <li><a href="http://petercarrjones.com/">Peter Carr Jones</a> | Twitter: <a href=""></a> </li>
+    <li><a href="http://jannellelegg.com">Jannelle Legg</a> | Twitter: <a href="https://twitter.com/jannellelegg">@jannellelegg</a></li>
+    <li><a href="http://lincolnmullen.com/">Lincoln Mullen</a> | Twitter: <a href="https://twitter.com/lincolnmullen">@lincolnmullen</a></li>
+    <li><a href="http://hackingthehumanities.org/">Patrick Murray-John</a> | Twitter: <a href="https://twitter.com/patrick_mj">@patrick_mj</a></li>
+    <li><a href="http://amanda-regan.com">Amanda Regan</a> | Twitter: <a href="https://twitter.com/regan008">@regan008</a></li>
 </div>
-</body>
+</div>
+
+
+</div><!--close container-->

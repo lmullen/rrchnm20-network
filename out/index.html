@@ -5,7 +5,7 @@
 <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
+<link href="css/bootstrap.min.css" rel="stylesheet">
  <style>
 .link {
 stroke: #999;
@@ -23,57 +23,98 @@ opacity: 0.6;
 pointer-events: none;
 }
 h1, h2, h3, h4, p {
-	font-family: 'Raleway',sans-serif;
+  font-family: 'Raleway',sans-serif;
 }
 .container {
-	width: 96%;
-	margin: auto;
+  width: 96%;
+  margin: auto;
 }
 </style>
 
 </head>
 <body>
-<div id="container">
-<div id="content">
-<h1> 20 years of RRCHNM history </h1>
+<div class="container">
 
-        <p>
-        How are the people and projects of Roy Rosenzweig Center for History and New Media related? How can we visualize these relationships over a twenty year history? During several workshop sessions during Day 1 of the RRCHNM 20th Anniversary Conference, we created a series of visualizations that represents our answers to those questions.
-        </p>
+  <div class="row">
+    <div class="col-md-12">
+          <nav role="navigation" class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">20 Years of RRCHNM History</a>
+              </div>
+              <!-- Collection of nav links and other content for toggling -->
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="people.html">People</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="about.html">About</a></li>
 
-        <p>
-        Using the Omeka API and a script created by Lincoln Mullen, we pulled the item information from the collaborator, affiliate, staff member, and project fields from the RRCHNM 20 site. This provided us with a dataset of related projects and people. We cleaned up the data using R and Google Open Refine, primarily to standardize the name variations and to remove errant organizations that had crept into our dataset. To check our work an initial network analysis was completed in R before moving the results into d3 to produce the visualizations below.
-        </p>
-
-       <h2>RRCHNM Projects</h2>
-       <p>Click on the nodes below to highlight the names of the person or project</p>
-
-       <h2>RRCHNM People</h2>
-       <p>Click on the nodes below to highlight the name of the person.</p>
-       <h2>RRCHNM People and Projects Network Visualization</h2>
-       <p>Click on the nodes below to highlight the name of the person or project.</p>
-        
-       
-
-</div>
-  <div id="text">
-  
-<div class="ui-widget">
-   <input id="search">
-    <button type="button" onclick="searchNode()">Search</button>
-</div>
-
+                  </ul>
+              </div>
+          </nav>
+    </div>
   </div>
-<div id="all"></div>
-</div>
+  <div class="row">
+      <div class="col-md-12">
+          <p>
+          How are the people and projects of Roy Rosenzweig Center for History and New Media related? How can we visualize these relationships over a twenty year history? During several workshop sessions during Day 1 of the RRCHNM 20th Anniversary Conference, we created a series of visualizations that represents our answers to those questions.
+          </p>
 
-<script src="all.js"></script>
-<script src="search.js"></script>
-<div id="vistext">
- <h2> What can we learn from these types of visualizations?</h2>
-        <p>All networks are misleading in the sense that they show you what you have, not what exists. In creating a repository of the Center&#39;s history, we&#39;ve necessarily made choices that have privleged certain kinds of information and skewed our data. Looking at our visualizations critically, we&#39;ve produced a closed network that doesn&#39;t reference the outside impact of CHNM on other projects and people. We have no sense of how the projects are related to one another or the role that each indivdiual played in the project. Furthermore, the reliance on grant documents has hidden the participation of staff members, GRAs and others that were not expressly written into the grants.</p>
-        <p>However, they illuminate a great deal about how the Center has functioned. They reveal the way in which projects are shared across the center, involving a great deal of input from a number of people. It is also significant that projects are connected through people, that several figures serve as a connection between disparate projects. The search functionality embraces this by highlighting a specific person or project in an effort to more closely examine those connections. Also reveals the use of content experts, people who worked specifically only on one project.
+          <p>
+          Using the Omeka API and a script created by Lincoln Mullen, we pulled the item information from the collaborator, affiliate, staff member, and project fields from the RRCHNM 20 site. This provided us with a dataset of related projects and people. We cleaned up the data using R and Google Open Refine, primarily to standardize the name variations and to remove errant organizations that had crept into our dataset. To check our work an initial network analysis was completed in R before moving the results into d3 to produce the visualizations below.
+          </p>
 
-        We limited ourselves to people and projects, but you could also pull geolocation information and reproduce this project with the other information available in the Omeka site.</p>
+      
+         <h2>RRCHNM People and Projects Network Visualization</h2>
+         <p>Click on the nodes below to highlight the name of the person or project.</p>
+      </div>    
+  </div><!--end row-->
+
+  <div id="text" class="row">
+    <div class="col-md-12">
+    
+      <div class="ui-widget">
+         <input id="search">
+          <button type="button" onclick="searchNode()">Search</button>
+      </div>
+
+    </div><!--end search col-->
+  </div><!--end row-->
+
+
+  <div class="row">
+  <div class="col-md-12" id="vis"></div>
+  <div id="all"></div>
+  <script src="all.js"></script>
+  <script src="search.js"></script>
+  </div>
+
+
+
+  <div class="row">
+      <div id="vistext" class="col-md-12">
+       <h2> What can we learn from these types of visualizations?</h2>
+              <p>All networks are misleading in the sense that they show you what you have, not what exists. In creating a repository of the Center&#39;s history, we&#39;ve necessarily made choices that have privleged certain kinds of information and skewed our data. Looking at our visualizations critically, we&#39;ve produced a closed network that doesn&#39;t reference the outside impact of CHNM on other projects and people. We have no sense of how the projects are related to one another or the role that each indivdiual played in the project. Furthermore, the reliance on grant documents has hidden the participation of staff members, GRAs and others that were not expressly written into the grants.</p>
+              <p>However, they illuminate a great deal about how the Center has functioned. They reveal the way in which projects are shared across the center, involving a great deal of input from a number of people. It is also significant that projects are connected through people, that several figures serve as a connection between disparate projects. The search functionality embraces this by highlighting a specific person or project in an effort to more closely examine those connections. This also reveals the use of content experts, people who worked specifically only on one project.
+
+              We limited ourselves to people and projects, but you could also pull geolocation information and reproduce this project with the other information available in the Omeka site.</p>
+      </div>
+  </div>
 </div>
+<!--<h3>Contributors:</h3>
+<p>Ken Albers</p>
+<p>Peter Jones</p>
+<p>Jannelle Legg</p>
+<p>Lincoln Mullen</p>
+<p>Patrick Murray-John</p>
+<p>Allison O'Connor</p>
+<p>Amanda Regan</p>-->
+
 </body>

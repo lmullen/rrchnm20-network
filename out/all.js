@@ -12,7 +12,7 @@ link.target = nodes[link.target] ||
 link.value = +link.value;
 });
 
-var width = 960
+var width = 1024
 height = 640;
 
 var force = d3.layout.force()
@@ -24,7 +24,7 @@ var force = d3.layout.force()
 .on("tick", tick)
 .start();
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#vis").append("svg")
 .attr("width", width)
 .attr("height", height);
 

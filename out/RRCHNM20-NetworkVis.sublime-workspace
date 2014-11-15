@@ -1,0 +1,539 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"color",
+				"border-color"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"word",
+				"word"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"json",
+				"json_data"
+			],
+			[
+				"page",
+				"page_size"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tot",
+				"totalMensClasses"
+			],
+			[
+				"to",
+				"totalMensClasses"
+			],
+			[
+				"total",
+				"totalMembers"
+			],
+			[
+				"t",
+				"totalMensClasses"
+			],
+			[
+				"De",
+				"Democratic"
+			],
+			[
+				"num",
+				"numberofMembers"
+			],
+			[
+				"club",
+				"club"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"mess",
+				"messben"
+			],
+			[
+				"txt",
+				"txt"
+			],
+			[
+				"margin",
+				"margin-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"alig",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"Bookmarks: Clear All"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/regan008/Desktop/RRCHNM-20"
+	],
+	"file_history":
+	[
+		"/Users/regan008/Desktop/RRCHNM-20/out/projects.js",
+		"/Users/regan008/Desktop/Clio3-Final/index.html",
+		"/Users/regan008/Desktop/Clio3-Final/lincolnexample.js",
+		"/Users/regan008/Desktop/Clio3-Final/barebones.html",
+		"/Users/regan008/Desktop/Clio3-Final/test5.html",
+		"/Users/regan008/Desktop/Clio3-Final/test2.html",
+		"/Users/regan008/Desktop/Clio3-Final/occcodes.html",
+		"/Users/regan008/Desktop/Clio3-Final/visualization.js",
+		"/Users/regan008/Desktop/Clio3-Final/occcodes.csv",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/index.html",
+		"/Users/regan008/Desktop/Clio3-Final/attempt1.html",
+		"/Users/regan008/Desktop/marc/data/records.csv",
+		"/Users/regan008/Desktop/Clio3-Final/wardsandparks.json",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/humans.txt",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/robots.txt",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/css/foundation.css",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/css/foundation.min.css",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/css/normalize.css",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/img/.gitkeep",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/foundation.min.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/foundation/foundation.dropdown.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/foundation/foundation.interchange.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/foundation/foundation.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/foundation/foundation.reveal.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/vendor/fastclick.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/vendor/jquery.cookie.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/vendor/jquery.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/vendor/modernizr.js",
+		"/Users/regan008/Desktop/Clio3-Final/foundation/js/vendor/placeholder.js",
+		"/Users/regan008/Desktop/mapping/attempt1.html",
+		"/private/var/folders/n0/b8xt7v7d68z770148410gb6m0000gn/T/fz3temp-1/page-full.php",
+		"/Users/regan008/Desktop/custom-home.php",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/698-Clio3/canada crime dcd3cross example.js",
+		"/Users/regan008/Documents/Clio3/D3/Gyms/style.css",
+		"/Users/regan008/Documents/Clio3/D3/Gyms/index.html",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/698-Clio3/D3/notes",
+		"/Users/regan008/Desktop/D3Clio3/styles.css",
+		"/Users/regan008/Desktop/D3Clio3/04-scaled.js",
+		"/Users/regan008/Desktop/D3Clio3/index.html",
+		"/Users/regan008/Desktop/D3Clio3/03-scatter.js",
+		"/Users/regan008/Desktop/D3Clio3/02-text.js",
+		"/Users/regan008/Desktop/D3Clio3/01-dom.js",
+		"/Users/regan008/Desktop/places.json",
+		"/Users/regan008/Documents/Clio3/Gyms/index.html",
+		"/Users/regan008/Desktop/places2.json",
+		"/Users/regan008/Desktop/test.html",
+		"/Users/regan008/Desktop/bos_land.json",
+		"/Users/regan008/Desktop/boston.json",
+		"/Users/regan008/Desktop/subunits.json",
+		"/Users/regan008/Dropbox/CHNM/PFPlugin-StylesNotes.mdown",
+		"/Users/regan008/Documents/Clio3/Gyms/BostonGyms4.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/BostonGyms2.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/foundation/index.html",
+		"/Users/regan008/Documents/Clio3/Gyms/test.html",
+		"/Users/regan008/Documents/Clio3/Gyms/style.css",
+		"/Users/regan008/Documents/Clio3/D3/BostonGyms.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/BostonGyms.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/test.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/data.csv",
+		"/Users/regan008/Documents/Clio3/Gyms/js/jquery.tipsy.js",
+		"/Users/regan008/Documents/Clio3/Gyms/js/index.html",
+		"/Users/regan008/Documents/Clio3/Gyms/js/style.css",
+		"/Users/regan008/Documents/Clio3/D3/barchartlabels.html",
+		"/Users/regan008/Documents/Clio3/D3/stacked.html",
+		"/Users/regan008/Documents/Clio3/D3/smallmultiples.html",
+		"/Users/regan008/Documents/Clio3/D3/smallmultiplesgyms.html",
+		"/Users/regan008/Documents/Clio3/D3/smallmultwomengyms.html",
+		"/Users/regan008/Documents/Clio3/D3/barchart.js",
+		"/Users/regan008/Documents/officemcsueregan",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1911.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1909.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1908.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1906.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1905.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1904.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1903.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1902.txt",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Applications/MAMP/htdocs/dataset.php",
+		"/Applications/MAMP/htdocs/classroster.php",
+		"/Users/regan008/Documents/Clio3/Networks/sylvia2.json",
+		"/Users/regan008/Documents/Clio3/Networks/sylvia.json",
+		"/Users/regan008/Documents/Clio3/Networks/test.html",
+		"/Users/regan008/Desktop/<form action=\"https:::docs.google.com:forms:d:12X8",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/PosseGymJournal/1895.txt",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/698-Clio3/TextAnalysisNotes.mdown",
+		"/Users/regan008/Desktop/DHBridge/dhb_awesome/my_first_script.py",
+		"/Users/regan008/Desktop/DHBridge/dhb_awesome/my_second_script.py",
+		"/Applications/MAMP/htdocs/amanda-regan/wordpress/wp-content/themes/Reverie/index.php",
+		"/Applications/MAMP/htdocs/amanda-regan/wordpress/wp-content/themes/Reverie/footer.php",
+		"/Applications/MAMP/htdocs/amanda-regan/wordpress/wp-content/themes/ReverieChild/style.css",
+		"/Users/regan008/Documents/Clio3/Topic Model Exploration/Docs_615_wordtopiccount.txt",
+		"/Users/regan008/Documents/Clio3/Topic Model Exploration/Docs_615_composition.txt",
+		"/Users/regan008/mallet-2.0.7/commands.txt",
+		"/Users/regan008/Dropbox/CHNM/PF Website",
+		"/Users/regan008/Dropbox/CHNM/notes.10.6.mdown",
+		"/Users/regan008/Documents/Clio3/R-Geo-Week8/nhgis-shp/nhgis0043_ds23_1880_state_codebook.txt",
+		"/Users/regan008/Documents/Clio3/R-Geo-Week8/nhgis-shp/test_point.dbf",
+		"/Users/regan008/Documents/Clio3/R-Geo-Week8/nhgis-shp/state_1890.shx",
+		"/usr/local/Cellar/libspatialite/4.2.0/README",
+		"/Users/regan008/Downloads/libspatialite-4.2.0/INSTALL",
+		"/Users/regan008/Desktop/ParseDirectories/iadnld.py",
+		"/Users/regan008/Desktop/ParseDirectories/downloadIA.py",
+		"/Users/regan008/Desktop/ParseDirectories/BostonBusiness1916.txt",
+		"/Users/regan008/Desktop/iadnld.py",
+		"/Users/regan008/Desktop/BostonBusiness1916.txt",
+		"/Users/regan008/Desktop/open",
+		"/Users/regan008/Desktop/BostonBusiness1916.html",
+		"/Users/regan008/Desktop/BostonBusiness.1916.html",
+		"/Users/regan008/Desktop/scrapeaddresses.py",
+		"/Users/regan008/Desktop/untitled folder/nhgis0024_ds17_1870_county_codebook.txt",
+		"/Users/regan008/Desktop/Dat/moregyms.json",
+		"/Users/regan008/Desktop/Dat Commands",
+		"/Users/regan008/Desktop/Clio3Week6/rpubsstyle.css",
+		"/Users/regan008/Desktop/Clio3Week6/jb.txt",
+		"/Users/regan008/Dropbox/CHNM/Sept15.mdown",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/698-Clio3/DatTutorial.mdown ",
+		"/Users/regan008/Desktop/turner data",
+		"/Users/regan008/Dropbox/**GMU PHD/RESEARCH/HSP Research/Turners.js",
+		"/Users/regan008/Downloads/nhgis0040_csv/nhgis0040_ds63_1930_tract.csv",
+		"/Users/regan008/Desktop/week4/fdr.js",
+		"/Users/regan008/Desktop/Datjs/01-new-dat.js",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/698-Clio3/R_Syntax_Note-cs.mdown",
+		"/Users/regan008/Desktop/DatTest/01-new-dat.js",
+		"/Users/regan008/Desktop/DatTest/fdr.json",
+		"/Users/regan008/Dropbox/**GMU PHD/Fall 2014/615-Gender Sex & Modern City/Research/ResearchBrainstorm.mdown",
+		"/Users/regan008/Desktop/DatTest/chronam.json",
+		"/Users/regan008/Desktop/week4/turners.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"BostonGyms4.csv",
+			"BostonGyms2.csv",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"thegraph",
+			"ya",
+			"formatted",
+			"redraw",
+			"change",
+			"data_",
+			"coast",
+			"drawMap",
+			"redraw",
+			"current.year",
+			"date",
+			"cause",
+			"wards",
+			"state",
+			"d.genders",
+			"filter",
+			"vis",
+			"#",
+			"length",
+			"height",
+			"Ward 9 Gymnasium",
+			"Ward 7 Gymnasium",
+			"Ward 6 Gymnasium",
+			"Ward 5 Gymnasium",
+			"Ward 4 Gymnasium",
+			"Ward 3 Gymnasium",
+			"Ward 17 Gymnasium",
+			"Ward 16 Gymnasium",
+			"Ward 12 Gymnasium",
+			"War 6 Gymnasium",
+			"Roslindale Gymnasium",
+			"North Bennet Street Gymnasium",
+			"East Boston Gymnasium",
+			"D Street GYmnasium",
+			"Curtis Hall Gymnasium",
+			"Cabot Street Gymnasium",
+			"Curtis Hall Gymnasium",
+			"19..",
+			"1/1",
+			"%y",
+			"%Y",
+			"parseDate",
+			"date",
+			"xscale",
+			"1925",
+			"1924",
+			"1923",
+			"1922",
+			"1921",
+			"1920",
+			"1919",
+			"1918",
+			"1917",
+			"1916",
+			"1915",
+			"1914",
+			"19..",
+			"19**",
+			"19*",
+			"+",
+			"12",
+			"12000",
+			"d.value",
+			"parseDate",
+			"val",
+			"val1",
+			"va1",
+			"value 1",
+			"value",
+			".date",
+			"val",
+			"val1",
+			"value 1",
+			"Line 1",
+			"d.value",
+			"d.vale",
+			"d.symbol",
+			"date",
+			"price",
+			"d.",
+			"i",
+			"state",
+			"%",
+			"type",
+			"a:",
+			"top-bar",
+			"nav",
+			"role",
+			"main",
+			"business directory",
+			"boston",
+			"li",
+			"content",
+			">\n",
+			"div",
+			"img3",
+			"img2",
+			"img5",
+			"img4",
+			"p {",
+			"foot",
+			"notes",
+			"sup",
+			"notes",
+			"backg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"val16",
+			"val15",
+			"val14",
+			"val13",
+			"val12",
+			"val11",
+			"val10",
+			"val9",
+			"val8",
+			"val7",
+			"val6",
+			"val5",
+			"val4",
+			"val3",
+			"val2",
+			"val1",
+			"val2",
+			"01/01",
+			"1/1/1925",
+			"1/1/1924",
+			"1/1/1923",
+			"1/1/1922",
+			"1/1/1921",
+			"1/1/1920",
+			"1/1/1919",
+			"1/1/1918",
+			"1/1/1917",
+			"1/1/1916",
+			"1/1/1915",
+			"1/1/1914",
+			"1/1/19.."
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 135.0
+	},
+	"output.find_results":
+	{
+		"height": 124.0
+	},
+	"project": "RRCHNM20-NetworkVis.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"attempt1.html"
+			],
+			[
+				"about",
+				"about.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 146.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

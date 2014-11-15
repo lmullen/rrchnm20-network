@@ -4,7 +4,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
- <style>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
 .link {
 stroke: #999;
 opacity: 0.4;
@@ -16,23 +18,65 @@ opacity: 0.7;
 stroke-width: 1.5px;
 }
 text {
-font: 7px serif;
+font: 7px 'Raleway', sans-serif;
 opacity: 0.6;
 pointer-events: none;
 }
+h1, h2, h3, h4, p {
+  font-family: 'Raleway',sans-serif;
+}
+
 </style>
 
 </head>
 <body>
+<div class="container">
 
-  <div id="text">
-  
-<div class="ui-widget">
-   <input id="search">
-    <button type="button" onclick="searchNode()">Search</button>
+  <div class="row"> <!--navigation-->
+    <div class="col-md-12">
+          <nav role="navigation" class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">20 Years of RRCHNM History</a>
+              </div>
+              <!-- Collection of nav links and other content for toggling -->
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active"><a href="people.html">People</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="about.html">About</a></li>
+
+                  </ul>
+              </div>
+          </nav>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+         <h2>RRCHNM People</h2>
+         <p>Click on the nodes below to highlight the names of the person or project</p>
+    </div>
+  </div>
+
+
+<div id="text" class="row"><!--search-->
+  <div class="col-md-12">
+      <div class="ui-widget">
+         <input id="search">
+          <button type="button" onclick="searchNode()">Search</button>
+      </div>
+  </div>
 </div>
 
-  </div>
+
 <div id="people"></div>
 
 
@@ -40,4 +84,7 @@ pointer-events: none;
 
 <script src="people.js"></script>
 <script src="search.js"></script>
+
+
+</div><!--close container-->
 </body>
